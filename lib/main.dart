@@ -1,31 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:new_app/screens/detail_screen.dart';
+import 'package:new_app/screens/favorite_screen.dart';
+import 'package:new_app/screens/home_screen.dart';
+import 'package:new_app/screens/profile_screen.dart';
+import 'package:new_app/screens/signin_screen.dart';
+import 'package:new_app/screens/signup_screen.dart';
 
-Future<void> main() async {
-//   // Pastikan binding Flutter ready
-//   WidgetsFlutterBinding.ensureInitialized();
-
-//   // Inisialisasi Firebase
-//   await Firebase.initializeApp(
-//     options: DefaultFirebaseOptions.currentPlatform,
-//   );
-
-runApp(const MyApp());
+void main() {
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-const MyApp({super.key});
+  const MyApp({super.key});
 
-@override
-Widget build(BuildContext context) {
-return MaterialApp(
-title: 'DompetKU',
-debugShowCheckedModeBanner: false,
-theme: ThemeData(
-colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-useMaterial3: true,
-),
-// SplashScreen tetap jadi halaman awal
-home: const SplashScreen(),
-);
-}
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'AnimeVerse',
+      theme: ThemeData(
+        fontFamily: 'Urbanist',
+      ),
+      home: const ProfileScreen(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
 }
