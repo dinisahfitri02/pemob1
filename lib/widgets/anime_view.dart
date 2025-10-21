@@ -26,6 +26,7 @@ class AnimeView extends StatelessWidget{
             crossAxisCount = (constraints.maxWidth / 200).floor().clamp(4, 6);
             childAspectRatio = 0.8;
           }
+
           return GridView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
@@ -48,7 +49,5 @@ class AnimeView extends StatelessWidget{
         },
       ),
     );
-
   }
-
 }

@@ -1,5 +1,6 @@
 import 'package:new_app/widgets/app_scaffold.dart';
 import 'package:flutter/material.dart';
+
 import '../widgets/anime_view.dart';
 import '../widgets/genre_list.dart';
 
