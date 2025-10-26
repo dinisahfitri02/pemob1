@@ -1,18 +1,23 @@
-import 'package:new_app/widgets/anime_card.dart';
 import 'package:flutter/material.dart';
-import '../data/dummy_data.dart';
+import '../models/anime.dart';
+import 'anime_card.dart';
 
-class AnimeView extends StatelessWidget{
-  const AnimeView({super.key});
+class AnimeView extends StatelessWidget {
+  final List<Anime> animeList;
+
+  const AnimeView({
+    super.key,
+    required this.animeList,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: EdgeInsets.symmetric(
-          horizontal: MediaQuery.of(context).size.width*0.04,
-        ),
+      padding: EdgeInsets.symmetric(
+        horizontal: MediaQuery.of(context).size.width * 0.04,
+      ),
       child: LayoutBuilder(
-        builder: (context, constraints){
+        builder: (context, constraints) {
           int crossAxisCount;
           double childAspectRatio;
 
@@ -28,23 +33,23 @@ class AnimeView extends StatelessWidget{
           }
 
           return GridView.builder(
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: crossAxisCount,
-                mainAxisSpacing: constraints.maxWidth * 0.03,
-                crossAxisSpacing: constraints.maxWidth * 0.05,
-                childAspectRatio: childAspectRatio,
-              ),
-              itemCount: DummyData.animeList.length,
-              itemBuilder: (context, index) {
-                final anime = DummyData.animeList[index];
-                return AnimeCard(
-                  id: anime.id,
-                  title: anime.title,
-                  imagePath: anime.imagePath,
-                );
-              },
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: crossAxisCount,
+              mainAxisSpacing: constraints.maxWidth * 0.03,
+              crossAxisSpacing: constraints.maxWidth * 0.05,
+              childAspectRatio: childAspectRatio,
+            ),
+            itemCount: animeList.length,
+            itemBuilder: (context, index) {
+              final anime = animeList[index];
+              return AnimeCard(
+                id: anime.id,
+                title: anime.title,
+                imagePath: anime.imagePath,
+              );
+            },
           );
         },
       ),
