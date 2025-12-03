@@ -38,7 +38,6 @@ class _DetailScreenState extends State<DetailScreen> {
       final appState = Provider.of<AppStateProvider>(context, listen: false);
       final malId = int.parse(widget.animeId);
 
-      // Try to find in current list first
       final animeFromList = appState.animeList
           .where((a) => a.malId == malId)
           .firstOrNull;
@@ -49,7 +48,6 @@ class _DetailScreenState extends State<DetailScreen> {
           _isLoading = false;
         });
       } else {
-        // Fetch from API if not in list
         final fetchedAnime = await appState.getAnimeById(malId);
         if (fetchedAnime != null) {
         }
@@ -71,7 +69,6 @@ class _DetailScreenState extends State<DetailScreen> {
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
 
-    // Loading state
     if (_isLoading) {
       return AppScaffold(
         body: const Center(
@@ -90,7 +87,6 @@ class _DetailScreenState extends State<DetailScreen> {
       );
     }
 
-    // Error or not found state
     if (_errorMessage != null || _anime == null) {
       return AppScaffold(
         body: Center(
@@ -131,7 +127,6 @@ class _DetailScreenState extends State<DetailScreen> {
     return AppScaffold(
       body: CustomScrollView(
         slivers: [
-          // Header section with image and title
           SliverAppBar(
             floating: true,
             pinned: true,
@@ -162,7 +157,6 @@ class _DetailScreenState extends State<DetailScreen> {
               background: Stack(
                 fit: StackFit.expand,
                 children: [
-                  // Background image - use largeImageUrl or fallback to imageUrl
                   (anime.largeImageUrl ?? anime.imageUrl) != null
                       ? CachedNetworkImage(
                     imageUrl: anime.largeImageUrl ?? anime.imageUrl ?? '',
@@ -199,7 +193,6 @@ class _DetailScreenState extends State<DetailScreen> {
                       ],
                     ),
                   ),
-                  // Gradient overlay for better text visibility
                   Container(
                     decoration: BoxDecoration(
                       gradient: LinearGradient(

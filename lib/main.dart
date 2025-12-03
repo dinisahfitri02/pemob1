@@ -8,19 +8,11 @@ import 'package:provider/provider.dart';
 import 'config/routes.dart';
 
 void main() async {
-  // Ensure Flutter binding is initialized
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Initialize Firebase
   await Firebase.initializeApp();
 
-  // Initialize Google Sign-In
-  // Note: clientId dan serverClientId bisa dikonfigurasi di sini jika diperlukan
-  // Untuk Android/iOS, konfigurasi sudah ada di google-services.json/GoogleService-Info.plist
-  await GoogleSignIn.instance.initialize(
-    // clientId: 'YOUR_WEB_CLIENT_ID', // Uncomment jika butuh untuk Web
-    // serverClientId: 'YOUR_SERVER_CLIENT_ID', // Uncomment jika butuh server auth code
-  );
+  await GoogleSignIn.instance.initialize();
 
   runApp(const MyApp());
 }

@@ -226,6 +226,45 @@ class _ProfileScreenState extends State<ProfileScreen> {
     confirmPasswordController.dispose();
   }
 
+  // void _showChangeNameDialog(BuildContext context) {
+  //   final TextEditingController nameController = TextEditingController();
+  //   final authProvider = context.read<AuthProvider>();
+  //
+  //   showDialog(
+  //     context: context,
+  //     builder: (context) => AlertDialog(
+  //       title: const Text('Change Username'),
+  //       content: TextField(
+  //         controller: nameController,
+  //         decoration: InputDecoration(labelText: 'New Username'),
+  //       ),
+  //       actions: [
+  //         TextButton(onPressed: () => Navigator.pop(context), child: const Text('Cancel')),
+  //         TextButton(
+  //           onPressed: () async {
+  //             final newName = nameController.text.trim();
+  //
+  //             final validationError = Validators.validateName(newName);
+  //             if (validationError != null) {
+  //               ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(validationError)));
+  //               return;
+  //             }
+  //
+  //             final success = await authProvider.updateDisplayName(newName);
+  //
+  //             Navigator.pop(context);
+  //
+  //             ScaffoldMessenger.of(context).showSnackBar(
+  //               SnackBar(content: Text(success ? 'Username updated' : 'Failed to update username')),
+  //             );
+  //           },
+  //           child: const Text('Save'),
+  //         ),
+  //       ],
+  //     ),
+  //   );
+  // }
+
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
@@ -369,12 +408,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
             SizedBox(height: screenHeight * 0.015),
 
+
             // Change Username Button
             ProfileButton(
               icon: Icons.person_outline,
               title: 'Change Username',
               subtitle: 'Update your display name',
-              onTap: () {
+              onTap: () {//onTap: () => _showChangeNameDialog(context),
+
                 // TODO: [PRAKTIKUM EXERCISE] Implement Change Username Feature
                 //
                 // CONTEXT:
