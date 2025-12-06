@@ -3,9 +3,9 @@
 Anime Verse adalah aplikasi mobile berbasis Flutter untuk mencari anime, melihat detail anime, menyimpan daftar favorit, dan melakukan filter berdasarkan genre. Aplikasi ini menggunakan Firebase untuk autentikasi dan penyimpanan favorit.
 
 ---
-Nama : Dini Sahfitri
-Nim : 231401033
-Bidang Studi Ilmu Komputer Universitas Sumatera Utara
+Nama : Dini Sahfitri<br>
+Nim : 231401033<br>
+Bidang Studi Ilmu Komputer Universitas Sumatera Utara<br>
 
 ### Fitur Utama
 #### 1. Menampilkan daftar anime
@@ -32,13 +32,13 @@ Bidang Studi Ilmu Komputer Universitas Sumatera Utara
 
 ### Application Preview
 Authentication Screens
-<table> <tr> <td><img src="./preview_aplikasi/img/Signup_view.jpg" width="250"><br><b>Sign Up</b></td> <td><img src="./preview_aplikasi/img/Signin_view.jpg" width="250"><br><b>Sign In</b></td> <td><img src="./preview_aplikasi/img/reset_password_view.jpg" width="250"><br><b>Reset Password</b></td> </tr> <tr> <td><img src="./preview_aplikasi/img/Change_password_view.jpg" width="250"><br><b>Change Password</b></td> </tr> </table>
+<table> <tr> <td><img src="./preview_app/img/Signup_view.jpg" width="250"><br><b>Sign Up</b></td> <td><img src="./preview_app/img/Signin_view.jpg" width="250"><br><b>Sign In</b></td> <td><img src="./preview_app/img/reset_password_view.jpg" width="250"><br><b>Reset Password</b></td> </tr> <tr> <td><img src="./preview_app/img/Change_password_view.jpg" width="250"><br><b>Change Password</b></td> </tr> </table>
 Home & Navigation
-<table> <tr> <td><img src="./preview_aplikasi/img/Halaman_utama_animeverse_view.jpg" width="250"><br><b>Home</b></td> <td><img src="./preview_aplikasi/img/Search_anime_favorite_view.jpg" width="250"><br><b>Search Anime</b></td> <td><img src="./preview_aplikasi/img/Fillterby_genre_view.jpg" width="250"><br><b>Filter by Genre</b></td> </tr> </table>
+<table> <tr> <td><img src="./preview_app/img/Halaman_utama_animeverse_view.jpg" width="250"><br><b>Home</b></td> <td><img src="./preview_app/img/Search_anime_favorite_view.jpg" width="250"><br><b>Search Anime</b></td> <td><img src="./preview_app/img/Fillterby_genre_view.jpg" width="250"><br><b>Filter by Genre</b></td> </tr> </table>
 Anime Details & Favorites
-<table> <tr> <td><img src="./preview_aplikasi/img/Detail_anime_view.jpg" width="250"><br><b>Anime Detail</b></td> <td><img src="./preview_aplikasi/img/Favorite_Anime_view.jpg" width="250"><br><b>Favorite List</b></td> <td><img src="./preview_aplikasi/img/Favorite_Anime_detail.jpg" width="250"><br><b>Favorite Detail</b></td> </tr> </table>
+<table> <tr> <td><img src="./preview_app/img/Detail_anime_view.jpg" width="250"><br><b>Anime Detail</b></td> <td><img src="./preview_app/img/Favorite_Anime_view.jpg" width="250"><br><b>Favorite List</b></td> <td><img src="./preview_app/img/Favorite_Anime_detail.jpg" width="250"><br><b>Favorite Detail</b></td> </tr> </table>
 User Profile
-<table> <tr> <td><img src="./preview_aplikasi/img/Profil_view.jpg" width="250"><br><b>Profile</b></td> </tr> </table>
+<table> <tr> <td><img src="./preview_app/img/Profil_view.jpg" width="250"><br><b>Profile</b></td> </tr> </table>
 
 ### Link Demo Aplikasi
 
