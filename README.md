@@ -41,4 +41,5 @@ User Profile
 <table> <tr> <td><img src="./preview_app/img/Profil_view.jpg" width="250"><br><b>Profile</b></td> </tr> </table>
 
 ### Link Demo Aplikasi
+[Demo Aplikasi Anime Verse](https://youtu.be/cjSzJ_neYfY?si=pfoRp_5R-BWMXAOs)
 
