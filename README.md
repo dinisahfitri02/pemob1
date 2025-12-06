@@ -32,7 +32,7 @@ Bidang Studi Ilmu Komputer Universitas Sumatera Utara<br>
 
 ### Application Preview
 Authentication Screens
-<table> <tr> <td><img src="./preview_app/img/Signup_view.jpg" width="250"><br><b>Sign Up</b></td> <td><img src="./preview_app/img/Signin_view.jpg" width="250"><br><b>Sign In</b></td> <td><img src="./preview_app/img/reset_password_view.jpg" width="250"><br><b>Reset Password</b></td> </tr> <tr> <td><img src="./preview_app/img/Change_password_view.jpg" width="250"><br><b>Change Password</b></td> </tr> </table>
+<table> <tr> <td><img src="./preview_app/img/Signup_view.jpg" width="250"><br><b>Sign Up</b></td> <td><img src="./preview_app/img/Signin_view.jpg" width="250"><br><b>Sign In</b></td> <td><img src="./preview_app/img/reset_password_view.jpg" width="250"><br><b>Reset Password</b></td> <td><img src="./preview_app/img/Change_password_view.jpg" width="250"><br><b>Change Password</b></td> </tr> </table>
 Home & Navigation
 <table> <tr> <td><img src="./preview_app/img/Halaman_utama_animeverse_view.jpg" width="250"><br><b>Home</b></td> <td><img src="./preview_app/img/Search_anime_favorite_view.jpg" width="250"><br><b>Search Anime</b></td> <td><img src="./preview_app/img/Fillterby_genre_view.jpg" width="250"><br><b>Filter by Genre</b></td> </tr> </table>
 Anime Details & Favorites
